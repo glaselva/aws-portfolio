@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giuseppe La Selva | Cloud & Security Portfolio</title>
+    <!-- Collegamento al file CSS esterno -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome per le icone (opzionale ma professionale) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="background-scanline"></div>
+
+    <div class="container">
+<!-- HEADER MODIFICATO -->
+<header>
+    <div class="lang-switch">
+        <button onclick="setLanguage('it')" class="lang-btn">IT</button> | 
+        <button onclick="setLanguage('en')" class="lang-btn">EN</button>
+    </div>
+    <!-- Contenitore immagine profilo -->
+    <div class="profile-container">
+        <img src="img/profilo.png" alt="Giuseppe La Selva" class="profile-img">
+    </div>
+
+    <h1 class="glitch-effect" data-text="Giuseppe La Selva">Giuseppe La Selva</h1>
+    <p class="tagline">Complex problems. Simple solutions.</p>
+    
+    <div class="badges">
+        <div class="badge"><i class="fab fa-aws"></i> AWS Certified Cloud Practitioner</div>
+        <div class="badge"><i class="fas fa-shield-alt"></i> Cisco CyberOps Associate</div>
+    </div>
+</header>
+
+
+        <!-- ABOUT ME -->
+        <section id="about">
+            <h2 class="section-title" data-i18n="section_about"> > whoami</h2>
+            <p data-i18n="text_about">
+                Junior Cloud Engineer & Security Enthusiast. <br>
+                Appassionato di architetture serverless e sicurezza informatica. 
+                Costruisco infrastrutture cloud efficienti, sicure e automatizzate, con un occhio di riguardo per l'ottimizzazione dei costi (FinOps).
+            </p>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-title" data-i18n="section_skills"> > ./skills</h2>
+            <div class="skills-container">
+                
+                <div class="skill-category">
+                    <!-- Prima era "Cloud & DevOps", ora è più specifico sulle infrastrutture -->
+                    <h3 data-i18n="skill_infra">Cloud Infrastructure</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">AWS (Free Tier)</span>
+                        <span class="skill-tag">Terraform (Basics)</span> <!-- Onesto: Basics -->
+                        <span class="skill-tag">Linux Command Line</span>
+                        <span class="skill-tag">Git & GitHub</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 data-i18n="skill_security">Security & Networking</h3>
+                    <div class="skill-tags">
+                        <!-- Qui spingi forte perché hai la cert Cisco -->
+                        <span class="skill-tag">Network Security</span>
+                        <span class="skill-tag">Threat Analysis</span>
+                        <span class="skill-tag">Packet Analysis</span>
+                        <span class="skill-tag">WAF Configuration</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 data-i18n="skill_dev">Scripting & Data</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">NoSQL (DynamoDB)</span> <!-- Più specifico di "Mongo" se usi AWS -->
+                        <span class="skill-tag">HTML/CSS</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PROGETTI -->
+        <section id="projects">
+            <h2 class="section-title" data-i18n="section_projects"> > ./projects</h2>
+            <div class="projects-grid">
+                
+                <!-- PROGETTO 1 -->
+                <article class="project-card">
+                    <div class="card-header">
+                        <span class="folder-icon"><i class="far fa-folder-open"></i></span>
+                        <h3 data-i18n="project1_title">1. Cloud Portfolio Infrastructure</h3>
+                    </div>
+                    <p data-i18n="project1_desc">
+                        L'infrastruttura che ospita questo sito. Hosting statico sicuro ad alta disponibilità.
+                        Progettato con approccio "Zero-Cost" sfruttando il Free Tier.
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">AWS S3</span>
+                        <span class="tech-tag">CloudFront</span>
+                        <span class="tech-tag">Terraform</span>
+                        <span class="tech-tag">GitHub Actions</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="#" class="btn-link"><i class="fab fa-github"></i> Source Code</a>
+                    </div>
+                </article>
+
+                <!-- PROGETTO 2 -->
+                <article class="project-card">
+                    <div class="card-header">
+                        <span class="folder-icon"><i class="far fa-folder"></i></span>
+                        <h3 data-i18n="project2_title">2. Serverless Visitor Counter</h3>
+                    </div>
+                    <p data-i18n="project2_desc">
+                        Backend API to track portfolio visits. Fully Serverless architecture. (Under development)
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">AWS Lambda</span>
+                        <span class="tech-tag">DynamoDB</span>
+                        <span class="tech-tag">API Gateway</span>
+                    </div>
+                    <div class="card-links">
+                         <a href="#" class="btn-link disabled"><i class="fas fa-code-branch"></i> In Progress</a>
+                    </div>
+                </article>
+
+                <!-- PROGETTO 3 -->
+                <article class="project-card">
+                    <div class="card-header">
+                        <span class="folder-icon"><i class="far fa-folder"></i></span>
+                        <h3 data-i18n="project3_title">3. Security WAF Automation</h3>
+                    </div>
+                    <p data-i18n="project3_desc">
+                        Ephemeral AWS WAF implementation for DDoS protection and Geo-Blocking, managed via IaC. (Under development)
+                    </p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">AWS WAF</span>
+                        <span class="tech-tag">Security Automation</span>
+                        <span class="tech-tag">FinOps</span>
+                    </div>
+                    <div class="card-links">
+                        <a href="#" class="btn-link disabled"><i class="fas fa-lock"></i> Coming Soon</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- CONTATTI -->
+        <section class="contact-section">
+            <h2 data-i18n="section_contact">Let's Connect</h2>
+            <p data-i18n="text_contact">Aperto a nuove opportunità nel mondo Cloud & Security.</p>
+            <div class="contact-info">
+                <p><i class="far fa-envelope"></i> <a href="mailto:g.laselva@outlook.it" class="email-link">g.laselva@outlook.it</a></p>
+                <p><i class="fas fa-mobile-alt"></i> +39 380 104 8346</p>
+                <p><i class="fas fa-map-marker-alt"></i> Gioia del Colle(BA), Puglia, IT</p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Designed by Giuseppe La Selva | Powered by AWS Free Tier</p>
+            <p id="system-status" style="margin-top:5px; font-size: 0.7rem;">System Status: CHECKING...</p>
+        </footer>
+    </div>
+
+    <!-- Collegamento al file JS esterno (alla fine del body per performance) -->
+    <script src="js/main.js"></script>
+    <script src="js/translations.js"></script>
+</body>
+</html>
