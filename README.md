@@ -47,7 +47,7 @@ I implemented a **Rate Limit Rule** to automatically block IPs exceeding 100 req
 #### 2. The Attack (Simulation)
 I executed a high-velocity request script to trigger the firewall threshold. Malicious requests were immediately intercepted at the Edge.
 
-![403 Forbidden Error](./screenshots/waf-403-error.jpg)
+![403 Forbidden Error](./screenshots/waf-403-error.png)
 *Fig 2: The WAF successfully blocked the traffic, returning a 403 Forbidden response.*
 
 #### 3. Telemetry & Analysis
@@ -105,7 +105,7 @@ Ho implementato una regola di **Rate Limit** per bloccare gli IP che superano le
 #### 2. L'Attacco (Simulazione)
 Ho eseguito uno script per generare traffico ad alta frequenza. Le richieste sono state intercettate immediatamente all'Edge.
 
-![Errore 403 Forbidden](./screenshots/waf-403-error.jpg)
+![Errore 403 Forbidden](./screenshots/waf-403-error.png)
 *Fig 2: Il WAF ha bloccato il traffico restituendo un errore 403 Forbidden.*
 
 #### 3. Telemetria e Analisi
