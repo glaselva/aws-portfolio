@@ -1,239 +1,76 @@
-# aws-portfolio
-
 # ☁️ AWS Cloud Portfolio
 
-[![en](https://img.shields.io/badge/lang-en-red.svg)](#-english-version)
-[![it](https://img.shields.io/badge/lang-it-green.svg)](#-versione-italiana)
+[![Terraform](https://img.shields.io/badge/Terraform-IaC-purple?style=flat&logo=terraform)](https://www.terraform.io/)
+[![AWS](https://img.shields.io/badge/AWS-S3%20%2B%20CloudFront-orange?style=flat&logo=amazon-aws)](https://aws.amazon.com/)
+[![Status](https://img.shields.io/badge/Status-Live-green?style=flat)]()
 
-> **Live Demo:** [https://g-laselva.github.io](https://g-laselva.github.io)
+**Live Demo:** [https://d12345abcdef.cloudfront.net](https://d12345abcdef.cloudfront.net) *(Aggiorna questo link con il tuo dominio CloudFront)*
 
 ---
 
-<a name="-english-version"></a>
 ## 🇬🇧 English Version
 
 ### 🎯 Project Overview
-This repository hosts the source code and infrastructure definitions for my personal cloud portfolio.
-The project serves as a practical demonstration of a cost-optimized, secure, and high-availability architecture built using **AWS Free Tier** services.
+This repository hosts the source code and infrastructure definitions for my personal cloud portfolio. The project demonstrates a **Serverless**, **Secure**, and **High-Performance** static website architecture on AWS.
+Unlike a simple bucket hosting, this project implements enterprise-grade security practices using **Terraform** for Infrastructure as Code (IaC).
 
 ### 🏗️ Architecture Roadmap
-The project is designed to evolve through three distinct phases:
+The project follows a phased evolution to demonstrate increasing cloud complexity:
 
-- [x] **Phase 1: Static Foundation (Completed)**
-  - HTML5/CSS3/JS frontend with bilingual support.
-  - Responsive "Cyber-Security" design theme.
-  - Hosted via GitHub Pages (Staging environment).
-  
-- [ ] **Phase 2: AWS Migration (In Progress)**
-  - Migration to **Amazon S3** (Private Bucket) + **CloudFront** (CDN).
-  - **Terraform** for Infrastructure as Code (IaC) provisioning.
-  - **OAC (Origin Access Control)** implementation for security.
+*   **Phase 1: Static Foundation (Completed ✅)**
+    *   Responsive HTML5/CSS3/JS frontend with "Cyber-Security" theme.
+    *   Local development environment.
 
-- [ ] **Phase 3: Serverless Backend (Planned)**
-  - **API Gateway + Lambda (Python)** for visitor tracking.
-  - **DynamoDB** NoSQL database for persistence.
-  - **AWS WAF** (Ephemeral) for automated threat protection.
+*   **Phase 2: AWS Infrastructure (Completed ✅)**
+    *   **IaC:** Full provisioning via Terraform (`aws_s3_bucket`, `aws_cloudfront_distribution`).
+    *   **Storage:** Private S3 Bucket (Block Public Access enabled).
+    *   **CDN:** Global content delivery via CloudFront Edge Locations.
+    *   **Security:** OAC (Origin Access Control) to restrict S3 access *only* to CloudFront.
+    *   **Encryption:** HTTPS enforcement and TLS certificates.
+
+*   **Phase 3: Advanced Security (Next Step 🚧)**
+    *   **WAF:** Implementation of AWS Web Application Firewall rules.
+    *   **Backend:** API Gateway + Lambda integration.
 
 ### 🛠️ Tech Stack
-- **Frontend:** HTML5, CSS3, JavaScript (Vanilla), FontAwesome.
-- **Cloud Provider:** AWS (S3, CloudFront, Lambda, DynamoDB).
-- **IaC:** Terraform.
-- **CI/CD:** GitHub Actions.
+*   **Infrastructure:** Terraform, AWS S3, AWS CloudFront.
+*   **Frontend:** HTML5, CSS3, Vanilla JS.
+*   **Tools:** AWS CLI, Git.
 
 ---
 
-<a name="-versione-italiana"></a>
 ## 🇮🇹 Versione Italiana
 
 ### 🎯 Panoramica Progetto
-Questo repository contiene il codice sorgente e le definizioni infrastrutturali del mio portfolio cloud personale.
-Il progetto è una dimostrazione pratica di un'architettura ottimizzata per costi, sicurezza e alta disponibilità, realizzata interamente con servizi **AWS Free Tier**.
+Questo repository ospita il codice e l'infrastruttura del mio portfolio cloud. Il progetto dimostra un'architettura **Serverless**, **Sicura** e ad **Alte Prestazioni** su AWS.
+A differenza di un semplice hosting statico, questo progetto implementa standard di sicurezza enterprise utilizzando **Terraform** per l'Infrastructure as Code (IaC).
 
 ### 🏗️ Roadmap Architetturale
-Il progetto evolve attraverso tre fasi distinte:
+Il progetto segue un'evoluzione a fasi per dimostrare competenze cloud crescenti:
 
-- [x] **Fase 1: Fondamenta Statiche (Completata)**
-  - Frontend HTML5/CSS3/JS con supporto bilingue.
-  - Design responsivo a tema "Cyber-Security".
-  - Hosting su GitHub Pages (Ambiente di Staging).
-  
-- [ ] **Fase 2: Migrazione AWS (In Corso)**
-  - Migrazione su **Amazon S3** (Bucket Privato) + **CloudFront** (CDN).
-  - Provisioning tramite **Terraform** (Infrastructure as Code).
-  - Implementazione di **OAC (Origin Access Control)** per la sicurezza.
+*   **Fase 1: Fondamenta Statiche (Completata ✅)**
+    *   Frontend HTML5/CSS3/JS responsivo con tema "Cyber-Security".
+    *   Ambiente di sviluppo locale.
 
-- [ ] **Fase 3: Backend Serverless (Pianificata)**
-  - **API Gateway + Lambda (Python)** per tracciamento visitatori.
-  - Database **DynamoDB** per la persistenza dati.
-  - **AWS WAF** (Effimero) per protezione automatizzata dalle minacce.
+*   **Fase 2: Infrastruttura AWS (Completata ✅)**
+    *   **IaC:** Provisioning completo via Terraform.
+    *   **Storage:** Bucket S3 Privato (Block Public Access attivo).
+    *   **CDN:** Distribuzione globale tramite CloudFront.
+    *   **Sicurezza:** OAC (Origin Access Control) per limitare l'accesso S3 *solo* a CloudFront.
+    *   **Crittografia:** HTTPS forzato e certificati TLS.
+
+*   **Fase 3: Sicurezza Avanzata (Prossimo Step 🚧)**
+    *   **WAF:** Implementazione di regole AWS Web Application Firewall.
+    *   **Backend:** Integrazione API Gateway + Lambda.
 
 ### 🛠️ Stack Tecnologico
-- **Frontend:** HTML5, CSS3, JavaScript (Vanilla), FontAwesome.
-- **Cloud Provider:** AWS (S3, CloudFront, Lambda, DynamoDB).
-- **IaC:** Terraform.
-- **CI/CD:** GitHub Actions.
+*   **Infrastruttura:** Terraform, AWS S3, AWS CloudFront.
+*   **Frontend:** HTML5, CSS3, Vanilla JS.
+*   **Strumenti:** AWS CLI, Git.
 
 ---
 
 ### 📬 Contact / Contatti
 **Giuseppe La Selva** - Cloud & Security Enthusiast
-- 📧 g.laselva@outlook.it
-- 💼 [# ☁️ AWS Cloud Portfolio
-
-[![en](https://img.shields.io/badge/lang-en-red.svg)](#-english-version)
-[![it](https://img.shields.io/badge/lang-it-green.svg)](#-versione-italiana)
-
-> **Live Demo:** [https://g-laselva.github.io](https://g-laselva.github.io)
-
----
-
-<a name="-english-version"></a>
-## 🇬🇧 English Version
-
-### 🎯 Project Overview
-This repository hosts the source code and infrastructure definitions for my personal cloud portfolio.
-The project serves as a practical demonstration of a cost-optimized, secure, and high-availability architecture built using **AWS Free Tier** services.
-
-### 🏗️ Architecture Roadmap
-The project is designed to evolve through three distinct phases:
-
-- [x] **Phase 1: Static Foundation (Completed)**
-  - HTML5/CSS3/JS frontend with bilingual support.
-  - Responsive "Cyber-Security" design theme.
-  - Hosted via GitHub Pages (Staging environment).
-  
-- [ ] **Phase 2: AWS Migration (In Progress)**
-  - Migration to **Amazon S3** (Private Bucket) + **CloudFront** (CDN).
-  - **Terraform** for Infrastructure as Code (IaC) provisioning.
-  - **OAC (Origin Access Control)** implementation for security.
-
-- [ ] **Phase 3: Serverless Backend (Planned)**
-  - **API Gateway + Lambda (Python)** for visitor tracking.
-  - **DynamoDB** NoSQL database for persistence.
-  - **AWS WAF** (Ephemeral) for automated threat protection.
-
-### 🛠️ Tech Stack
-- **Frontend:** HTML5, CSS3, JavaScript (Vanilla), FontAwesome.
-- **Cloud Provider:** AWS (S3, CloudFront, Lambda, DynamoDB).
-- **IaC:** Terraform.
-- **CI/CD:** GitHub Actions.
-
----
-
-<a name="-versione-italiana"></a>
-## 🇮🇹 Versione Italiana
-
-### 🎯 Panoramica Progetto
-Questo repository contiene il codice sorgente e le definizioni infrastrutturali del mio portfolio cloud personale.
-Il progetto è una dimostrazione pratica di un'architettura ottimizzata per costi, sicurezza e alta disponibilità, realizzata interamente con servizi **AWS Free Tier**.
-
-### 🏗️ Roadmap Architetturale
-Il progetto evolve attraverso tre fasi distinte:
-
-- [x] **Fase 1: Fondamenta Statiche (Completata)**
-  - Frontend HTML5/CSS3/JS con supporto bilingue.
-  - Design responsivo a tema "Cyber-Security".
-  - Hosting su GitHub Pages (Ambiente di Staging).
-  
-- [ ] **Fase 2: Migrazione AWS (In Corso)**
-  - Migrazione su **Amazon S3** (Bucket Privato) + **CloudFront** (CDN).
-  - Provisioning tramite **Terraform** (Infrastructure as Code).
-  - Implementazione di **OAC (Origin Access Control)** per la sicurezza.
-
-- [ ] **Fase 3: Backend Serverless (Pianificata)**
-  - **API Gateway + Lambda (Python)** per tracciamento visitatori.
-  - Database **DynamoDB** per la persistenza dati.
-  - **AWS WAF** (Effimero) per protezione automatizzata dalle minacce.
-
-### 🛠️ Stack Tecnologico
-- **Frontend:** HTML5, CSS3, JavaScript (Vanilla), FontAwesome.
-- **Cloud Provider:** AWS (S3, CloudFront, Lambda, DynamoDB).
-- **IaC:** Terraform.
-- **CI/CD:** GitHub Actions.
-
----
-
-### 📬 Contact / Contatti
-**Giuseppe La Selva** - Cloud & Security Enthusiast
-- 📧 g.laselva@outlook.it
-- 💼 [LinkedIn Profile](#)
-
-- # ☁️ AWS Cloud Portfolio
-
-[![en](https://img.shields.io/badge/lang-en-red.svg)](#-english-version)
-[![it](https://img.shields.io/badge/lang-it-green.svg)](#-versione-italiana)
-
-> **Live Demo:** [https://g-laselva.github.io](https://g-laselva.github.io)
-
----
-
-<a name="-english-version"></a>
-## 🇬🇧 English Version
-
-### 🎯 Project Overview
-This repository hosts the source code and infrastructure definitions for my personal cloud portfolio.
-The project serves as a practical demonstration of a cost-optimized, secure, and high-availability architecture built using **AWS Free Tier** services.
-
-### 🏗️ Architecture Roadmap
-The project is designed to evolve through three distinct phases:
-
-- [x] **Phase 1: Static Foundation (Completed)**
-  - HTML5/CSS3/JS frontend with bilingual support.
-  - Responsive "Cyber-Security" design theme.
-  - Hosted via GitHub Pages (Staging environment).
-  
-- [ ] **Phase 2: AWS Migration (In Progress)**
-  - Migration to **Amazon S3** (Private Bucket) + **CloudFront** (CDN).
-  - **Terraform** for Infrastructure as Code (IaC) provisioning.
-  - **OAC (Origin Access Control)** implementation for security.
-
-- [ ] **Phase 3: Serverless Backend (Planned)**
-  - **API Gateway + Lambda (Python)** for visitor tracking.
-  - **DynamoDB** NoSQL database for persistence.
-  - **AWS WAF** (Ephemeral) for automated threat protection.
-
-### 🛠️ Tech Stack
-- **Frontend:** HTML5, CSS3, JavaScript (Vanilla), FontAwesome.
-- **Cloud Provider:** AWS (S3, CloudFront, Lambda, DynamoDB).
-- **IaC:** Terraform.
-- **CI/CD:** GitHub Actions.
-
----
-
-<a name="-versione-italiana"></a>
-## 🇮🇹 Versione Italiana
-
-### 🎯 Panoramica Progetto
-Questo repository contiene il codice sorgente e le definizioni infrastrutturali del mio portfolio cloud personale.
-Il progetto è una dimostrazione pratica di un'architettura ottimizzata per costi, sicurezza e alta disponibilità, realizzata interamente con servizi **AWS Free Tier**.
-
-### 🏗️ Roadmap Architetturale
-Il progetto evolve attraverso tre fasi distinte:
-
-- [x] **Fase 1: Fondamenta Statiche (Completata)**
-  - Frontend HTML5/CSS3/JS con supporto bilingue.
-  - Design responsivo a tema "Cyber-Security".
-  - Hosting su GitHub Pages (Ambiente di Staging).
-  
-- [ ] **Fase 2: Migrazione AWS (In Corso)**
-  - Migrazione su **Amazon S3** (Bucket Privato) + **CloudFront** (CDN).
-  - Provisioning tramite **Terraform** (Infrastructure as Code).
-  - Implementazione di **OAC (Origin Access Control)** per la sicurezza.
-
-- [ ] **Fase 3: Backend Serverless (Pianificata)**
-  - **API Gateway + Lambda (Python)** per tracciamento visitatori.
-  - Database **DynamoDB** per la persistenza dati.
-  - **AWS WAF** (Effimero) per protezione automatizzata dalle minacce.
-
-### 🛠️ Stack Tecnologico
-- **Frontend:** HTML5, CSS3, JavaScript (Vanilla), FontAwesome.
-- **Cloud Provider:** AWS (S3, CloudFront, Lambda, DynamoDB).
-- **IaC:** Terraform.
-- **CI/CD:** GitHub Actions.
-
----
-
-### 📬 Contact / Contatti
-**Giuseppe La Selva** - Cloud & Security Enthusiast
-- 📧 g.laselva@outlook.it
-- 💼 [LinkedIn Profile](https://www.linkedin.com/in/giuseppe-laselva)
+📧 [g.laselva@outlook.it](mailto:g.laselva@outlook.it)
+💼 [LinkedIn Profile](https://www.linkedin.com/in/giuseppe-laselva)
