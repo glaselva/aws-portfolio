@@ -45,7 +45,7 @@ I implemented a **Rate Limit Rule** to automatically block IPs exceeding 100 req
 *Fig 1: Configuring the custom Rate-Based rule in the AWS Console.*
 
 #### 2. The Attack (Simulation)
-I executed a high-velocity request script to trigger the firewall threshold. Malicious requests were immediately intercepted at the Edge.
+I generated high-frequency traffic by refreshing the page hundreds of times in a short time. The requests were intercepted immediately at the Edge.
 
 ![403 Forbidden Error](./screenshots/waf-403-error.png)
 *Fig 2: The WAF successfully blocked the traffic, returning a 403 Forbidden response.*
@@ -103,7 +103,7 @@ Ho implementato una regola di **Rate Limit** per bloccare gli IP che superano le
 *Fig 1: Configurazione della regola Rate-Based nella console AWS.*
 
 #### 2. L'Attacco (Simulazione)
-Ho eseguito uno script per generare traffico ad alta frequenza. Le richieste sono state intercettate immediatamente all'Edge.
+Ho generato traffico ad alta frequenza refreshando la pagina centinaia di volte in un breve tempo. Le richieste sono state intercettate immediatamente all'Edge.
 
 ![Errore 403 Forbidden](./screenshots/waf-403-error.png)
 *Fig 2: Il WAF ha bloccato il traffico restituendo un errore 403 Forbidden.*
