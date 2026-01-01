@@ -4,7 +4,7 @@
 [![AWS](https://img.shields.io/badge/AWS-S3%20%2B%20CloudFront-orange?style=flat&logo=amazon-aws)](https://aws.amazon.com/)
 [![Status](https://img.shields.io/badge/Status-Live-green?style=flat)]()
 
-**Live Demo:** [https://d12345abcdef.cloudfront.net](https://https://djynxtnis5be4.cloudfront.net/)
+**Live Demo:** [Click Me!](https://djynxtnis5be4.cloudfront.net/)
 ---
 
 ## 🇬🇧 English Version
