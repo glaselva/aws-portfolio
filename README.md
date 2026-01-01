@@ -41,19 +41,19 @@ To validate the security posture, I configured a custom Web ACL and performed a 
 #### 1. Configuration
 I implemented a **Rate Limit Rule** to automatically block IPs exceeding 100 requests within a 5-minute window.
 
-![AWS WAF Configuration](./screenshots/img/waf-rule-config.jpg)
+![AWS WAF Configuration](./screenshots/waf-rule-config.jpg)
 *Fig 1: Configuring the custom Rate-Based rule in the AWS Console.*
 
 #### 2. The Attack (Simulation)
 I executed a high-velocity request script to trigger the firewall threshold. Malicious requests were immediately intercepted at the Edge.
 
-![403 Forbidden Error](./screenshots/img/waf-403-error.jpg)
+![403 Forbidden Error](./screenshots/waf-403-error.jpg)
 *Fig 2: The WAF successfully blocked the traffic, returning a 403 Forbidden response.*
 
 #### 3. Telemetry & Analysis
 CloudWatch metrics confirmed the defense efficacy.
 
-![WAF Dashboard](./screenshots/img/waf-traffic-dashboard.jpg)
+![WAF Dashboard](./screenshots/waf-traffic-dashboard.jpg)
 *Fig 3: Real-time telemetry showing legitimate traffic (Green) vs. blocked malicious traffic (Red).*
 
 ---
@@ -105,13 +105,13 @@ Ho implementato una regola di **Rate Limit** per bloccare gli IP che superano le
 #### 2. L'Attacco (Simulazione)
 Ho eseguito uno script per generare traffico ad alta frequenza. Le richieste sono state intercettate immediatamente all'Edge.
 
-![Errore 403 Forbidden](./screenshots/img/waf-403-error.jpg)
+![Errore 403 Forbidden](./screenshots/waf-403-error.jpg)
 *Fig 2: Il WAF ha bloccato il traffico restituendo un errore 403 Forbidden.*
 
 #### 3. Telemetria e Analisi
 Le metriche di CloudWatch confermano l'efficacia della difesa.
 
-![Grafico Traffico WAF](./screenshots/img/waf-traffic-dashboard.jpg)
+![Grafico Traffico WAF](./screenshots/waf-traffic-dashboard.jpg)
 *Fig 3: Il grafico mostra in rosso il traffico malevolo bloccato automaticamente.*
 
 ---
