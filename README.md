@@ -236,4 +236,4 @@ Il progetto evolve attraverso tre fasi distinte:
 ### 📬 Contact / Contatti
 **Giuseppe La Selva** - Cloud & Security Enthusiast
 - 📧 g.laselva@outlook.it
-- 💼 [LinkedIn Profile](www.linkedin.com/in/giuseppe-laselva)
+- 💼 [LinkedIn Profile](https://www.linkedin.com/in/giuseppe-laselva)
