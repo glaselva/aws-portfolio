@@ -41,3 +41,21 @@ document.addEventListener('DOMContentLoaded', () => {
     setLanguage('en'); 
     // ... il resto del tuo codice esistente ...
 });
+
+// Gestione Cookie Banner
+function checkCookieConsent() {
+    if (!localStorage.getItem('cookie_consent')) {
+        document.getElementById('cookie-banner').style.display = 'block';
+    }
+}
+
+function acceptCookies() {
+    localStorage.setItem('cookie_consent', 'true');
+    document.getElementById('cookie-banner').style.display = 'none';
+}
+
+// Aggiungi la chiamata all'avvio
+document.addEventListener('DOMContentLoaded', () => {
+    // ... il tuo codice esistente ...
+    checkCookieConsent();
+});
