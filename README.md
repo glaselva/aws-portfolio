@@ -5,8 +5,6 @@
 [![Security](https://img.shields.io/badge/Security-OAC%20%2B%20WAF-blue?style=flat&logo=amazonaws)](https://aws.amazon.com/waf/)
 [![Status](https://img.shields.io/badge/Status-Live-green?style=flat)](https://d12345abcdef.cloudfront.net)
 
-> **Quick Links:** 🌐 [**Visita il Sito Live**](https://d12345abcdef.cloudfront.net) | 📂 [**Vedi Codice Terraform**](./terraform) | 🛡️ [**Analisi Attacco DDoS**](#-security-showcase-waf-in-action)
-
 **Live Demo:** [Click Me!](https://djynxtnis5be4.cloudfront.net/)
 ---
 
