@@ -289,3 +289,84 @@ footer {
     transform: translateY(-2px);
     box-shadow: 0 2px 5px rgba(0,0,0,0.5);
 }
+
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0f1518; /* Sfondo nero solido per leggibilità */
+    border-top: 2px solid var(--accent-green); /* Bordo verde più evidente */
+    color: var(--white); /* Testo bianco per massimo contrasto */
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    z-index: 1000;
+    display: none;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.8);
+}
+
+/* Stile specifico per il bottone del cookie banner */
+.cookie-btn {
+    background-color: var(--dark-green); /* Sfondo verde scuro */
+    color: var(--accent-green);          /* Testo verde fluo */
+    border: 1px solid var(--accent-green);
+    padding: 8px 20px;
+    margin-left: 15px;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.cookie-btn:hover {
+    background-color: var(--accent-green); /* Inverte i colori all'hover */
+    color: var(--bg-dark);                 /* Testo nero su sfondo verde fluo */
+    box-shadow: 0 0 10px var(--accent-green); /* Effetto neon */
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.footer-logo {
+  height: 120px !important;  /* GROSSO e visibile */
+  width: auto !important;
+  max-width: 220px !important;
+}
+
+/* CTA Section */
+#cta {
+    text-align: center;
+}
+
+#cta .section-title {
+    border-left: none;
+}
+
+/* Download Button */
+.btn-download {
+    background-color: var(--dark-green); /* Sfondo verde scuro */
+    color: var(--accent-green);          /* Testo verde fluo */
+    border: 1px solid var(--accent-green);
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-download:hover {
+    background-color: var(--accent-green); /* Inverte i colori all'hover */
+    color: var(--bg-dark);                 /* Testo nero su sfondo verde fluo */
+    box-shadow: 0 0 10px var(--accent-green); /* Effetto neon */
+}
